@@ -1,0 +1,7 @@
+streamlit
+pandas 
+numpy 
+matplotlib
+ydata_profiling
+streamlit-pandas-profiling
+pycaret[full]==3.3.2
