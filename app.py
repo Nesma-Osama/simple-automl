@@ -12,7 +12,7 @@ from pycaret.classification import setup as class_setup,compare_models as class_
 df=None
 
 if os.path.exists("source_data.csv"):
-    df = pd.read_csv(file, index_col=None, header=0)
+    df = pd.read_csv("source_data.csv", index_col=None, header=0)
 
 ###
 def regressor(target):
