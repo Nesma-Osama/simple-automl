@@ -29,7 +29,7 @@ def regressor(target):
     best_model=reg_compare_models()
     models=reg_pull()
     st.info("This is the Experimentation model")
-    st.dataframe(models)
+    st.dataframe(models.astype(str))  # convert everything to string
     reg_save_model(best_model,"reg_best_model")
 
 
@@ -47,7 +47,7 @@ def classifier(target):
     best_model=class_compare_models()
     models=class_pull()
     st.info("This is the Experimentation model")
-    st.dataframe(models)
+    st.dataframe(models.astype(str))  # convert everything to string
     class_save_model(best_model,"classif_best_model")
 
 with st.sidebar:
